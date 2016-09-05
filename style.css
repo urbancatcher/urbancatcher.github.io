@@ -86,8 +86,12 @@ a:hover, a:active {
   width:350px;
   display:inline;
 }
+.postcard{
+  padding-bottom:5rem;
+}
 .img-circle {
-  padding:5rem;
+  padding:1rem;
+  width:300px;
   display:inline;
 }
 
