@@ -22,7 +22,7 @@ a:hover, a:active {
   padding: 5rem;
 }
 .bg-white {
-  padding: 1rem;
+  padding: 2rem;
   background-color: #ffffff; 
 }
 .bg-white a, .bg-white a:link, .bg-white a:visited  {
@@ -43,7 +43,7 @@ a:hover, a:active {
   padding: 1rem;
 }
 .square{
-  padding: 5rem;
+  padding: 8rem;
 }
 
 /*project page*/
