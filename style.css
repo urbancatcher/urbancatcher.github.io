@@ -40,13 +40,14 @@ a:hover, a:active {
   opacity:1;
 }
 .thumbnail-section{
-  padding:10rem;
+  padding:5rem;
 }
 .thumbnail-frame{
   padding:5rem;
 }
 .thumbnailicon {
   padding:1rem;
+  width:200px;
 }
 
 
