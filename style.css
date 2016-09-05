@@ -39,12 +39,16 @@ a:hover, a:active {
 .hover:hover {
   opacity:1;
 }
+.thumbnail-section{
+  padding:8rem;
+}
+.thumbnail-frame{
+  padding:3rem;
+}
 .thumbnailicon {
-  padding: 1rem;
+  padding:1rem;
 }
-.square{
-  padding: 8rem;
-}
+
 
 /*project page*/
 .home-icon{
@@ -53,7 +57,7 @@ a:hover, a:active {
   display:inline;
 }
 .next-icon{
-  width: 8rem;
+  width: 5rem;
   height:auto;
   display:inline;
 }
@@ -65,7 +69,7 @@ a:hover, a:active {
   text-align:justify;
   font-size:15px;
   padding-top: 0rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   padding-right: 5rem;
   padding-left: 5rem;
 }
