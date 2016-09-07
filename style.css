@@ -53,7 +53,7 @@ a:hover, a:active {
 
 /*project page*/
 .home-icon{
-  width: 12rem;
+  width: 180px;
   height:auto;
   display:inline;
 }
@@ -64,10 +64,11 @@ a:hover, a:active {
 }
 .gallerytitle{
   padding:3rem;
+  padding-bottom:0rem;
   color: #110631; 
 }
 .description{
-  text-align:justify;
+  text-align:center;
   font-size:15px;
   padding-top: 0rem;
   padding-bottom: 3rem;
