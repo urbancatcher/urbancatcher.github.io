@@ -57,27 +57,26 @@ a:hover, a:active {
   height:auto;
   display:inline;
 }
-.next-icon{
-  width: 5rem;
-  height:auto;
-  display:inline;
+.gallery{
+  padding:10rem;
 }
 .gallerytitle{
-  padding:3rem;
-  padding-bottom:0rem;
+/*  padding:3rem;
+  padding-bottom:0rem;*/
   color: #110631; 
 }
 .description{
   text-align:center;
-  font-size:18px;
+  font-size:16px;
   padding-top: 0rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
   padding-right: 5rem;
   padding-left: 5rem;
 }
 .worktitle{
   color:#FF4D5C;
-  padding-bottom:5rem;
+
+
 }
 .artwork {
   padding-top: 2rem;
@@ -87,11 +86,13 @@ a:hover, a:active {
   width:750px;
   display:inline;
 }
-.artwork-faceicon {
-  padding: 1rem;
-  width:350px;
+.artwork-portrait {
+  padding-top:2rem;
+  padding-bottom:10rem;
+  width:400px;
   display:inline;
 }
+
 .postcard{
   padding-left:20rem;
   padding-right:20rem;  
