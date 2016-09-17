@@ -19,10 +19,10 @@ a:hover, a:active {
 /*index page*/
 .bg-blue {
   background-color: #57CCFF; 
-  padding: 5rem;
+  padding: 3rem;
 }
 .bg-white {
-  padding: 2rem;
+  padding: 3rem;
   background-color: #ffffff; 
 }
 .bg-white a, .bg-white a:link, .bg-white a:visited  {
@@ -58,23 +58,14 @@ a:hover, a:active {
   display:inline;
 }
 .gallery{
-  padding-top:5rem;
-  padding-bottom:10rem;
-  padding-left:2rem;
-  padding-right:2rem;
+  padding:3rem 0rem;
 }
 .gallerytitle{
-/*  padding:3rem;
-  padding-bottom:0rem;*/
   color: #110631; 
 }
 .description{
   text-align:center;
   font-size:16px;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-/*  padding-right: 5rem;
-  padding-left: 5rem;*/
 }
 .worktitle{
   color:#FF4D5C;
@@ -82,23 +73,22 @@ a:hover, a:active {
 
 }
 .artwork {
-/*  padding:2rem;*/
+  padding:2rem 0rem;
   width:800px;
   display:inline;
 }
 .artwork-portrait {
-  padding-top:2rem;
+  padding:2rem 0rem;
   width:600px;
   display:inline;
 }
 
-.postcard{
-  padding-left:20rem;
-  padding-right:20rem;  
-  padding-bottom:10rem;
+.gallery-postcard{
+  margin: 0 auto;
+  padding:3rem 0rem;
 }
 .postcard-photo{
-  padding:1rem;
+  padding:2rem 0rem;
   width:250px;
   display:inline;
 }
