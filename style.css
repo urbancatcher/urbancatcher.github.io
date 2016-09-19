@@ -17,9 +17,10 @@ a:hover, a:active {
 }
 
 /*index page*/
+
 .bg-blue {
   background-color: #57CCFF; 
-  padding: 3rem;
+  padding:3rem;
 }
 .bg-white {
   padding: 3rem;
