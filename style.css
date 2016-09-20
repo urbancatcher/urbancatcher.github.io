@@ -41,14 +41,15 @@ a:hover, a:active {
   opacity:1;
 }
 .thumbnail-section{
-  padding:5rem;
+  max-width: 1200px;
+  margin:0 auto;
 }
 .thumbnail-frame{
-  padding:3rem;
+  padding:2rem;
 }
 .thumbnailicon {
-  padding:1rem;
-  width:250px;
+/*  padding:1rem;*/
+  width:300px;
 }
 
 
@@ -93,31 +94,3 @@ a:hover, a:active {
   width:250px;
   display:inline;
 }
-
-
-/*.bg-black{
-  background-color: #000000; 
-  color: #ffffff; 
-}
-.bg-grey {
-  background-color: #f0f0f0;
-  color: #110631;
-}
-.bg-pink {
-  background-color: #FF4D5C; 
-  color: #110631;
-}*/
-
-
-/*.navbar {
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 0;
-  font-size: 12px;
-  letter-spacing: 2px;
-  opacity: 0.85;
-  background-color: #ffffff;
-}
-.navbar-nav  li a:hover {
-  color: #FF6F5A !important;
-}*/
