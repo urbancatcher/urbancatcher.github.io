@@ -20,7 +20,7 @@ a:hover, a:active {
 
 .bg-blue {
   background-color: #57CCFF; 
-  padding:2rem;
+  padding:3rem;
 }
 .bg-white {
   padding: 3rem;
@@ -35,7 +35,7 @@ a:hover, a:active {
   color:#FF4D5C;
 }
 .hover{
-  opacity:0.9;
+  opacity:0.8;
 }
 .hover:hover {
   opacity:1;
