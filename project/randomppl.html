@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Random People Make You Smile</title>
+  <title>Random People Make You Smile | URBANCATCHER</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--font-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!--css file-->
   <link rel="stylesheet" type="text/css" href="../style.css">
+  <!-- js file -->  
+  <script src="script.js"></script>
   <!--browser icon-->
-  <link rel="icon" href="../img/icon.png">
-
-
+  <link rel="icon" href="img/icon.png">
 </head>
-<body id="home">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+
 <!-- Navbar -->
-<div id="about" class="container-fluid bg-blue text-center">
-  <a href="daydaydoodle.html"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a href="../index.html"><img src="../img/home.svg" class="img-responsive hover home-icon" alt="image"></a>
-  <a href="portraits.html"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
-</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">URBANCATCHER</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">  
+        <li><a href="../index.html#work">WORK</a></li>
+        <li><a href="../index.html#store">STORE</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-
-<!-- Content-->
+<!-- Container (Artwork)-->
 <div class="container-fluid bg-white text-center" >
-  <h2 class="gallerytitle">Random People Make You Smile</h2><br/>
-  <div class="row"> 
+  <a href="daydaydoodle.html"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;&nbsp;&nbsp;</a><span class="gallerytitle">Random People Make You Smile</span><a href="portraits.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+  <br/>
+  <br/>
+  <div class="row">
     <div class="col-sm-12 description">
       <p>2016 / Random People Make You Smile.<br/>
       A series of illustrations of random people doing random things at random places.</p>
@@ -44,35 +56,32 @@
       <img src="../img/randomppl/randomppl03.jpg" class="img-responsive artwork-portrait" alt="image"/>
     </div>
   </div>
-
 </div>
 
-
-
-<!--Footer (Contact)-->
-<footer id="contact" class="container-fluid bg-blue" style="text-align:left">
-<div class="row">
-  <div class="col-sm-6" style="padding:0px 50px">
-    <h3 style="color:#ffffff">Contact</h3>
-    <p>Please feel free to get in touch for any collaborations, commissions or just to say hi!</p>
-    <a href="mailto:urbancatcher@gmail.com"><img src="../img/socialicon/email.png" class="img-responsive hover" style="display:inline" alt="image" width="80px" height=auto></a>
-    <a href="https://www.facebook.com/urbancatcherhk" target="_blank"><img src="../img/socialicon/fb.png" class="img-responsive hover" style="display:inline" alt="image" width="80px" height=auto></a>
-    <a href="https://www.instagram.com/urbancatcher/" target="_blank"><img src="../img/socialicon/ig.png" class="img-responsive hover" style="display:inline" alt="image" width="80px" height=auto></a>
-    <a href="https://www.pinterest.com/urbancatcherhk" target="_blank"><img src="../img/socialicon/pinterest.png" class="img-responsive hover" style="display:inline" alt="image" width="80px" height=auto></a>
-<!--     <a href="https://www.flickr.com/photos/urbancatcher" target="_blank"><img src="../img/socialicon/flickr.png" class="img-responsive hover" style="display:inline" alt="oops.." width="80px" height=auto></a> -->
+<!-- Container (footer)-->
+<div class="container-fluid bg-blue text-left bottom">
+  <div class="row">
+    <div class="col-sm-6" style="padding:50px">
+      <p>Contact</p>
+      <a href="mailto:urbancatcher@gmail.com"><img src="../img/socialicon/email.png" class="img-responsive hover social-icon" alt="image"></a>
+      <a href="https://www.instagram.com/urbancatcher/" target="_blank"><img src="../img/socialicon/ig.png" class="img-responsive hover social-icon" alt="image"></a>
+      <a href="https://www.facebook.com/urbancatcherhk" target="_blank"><img src="../img/socialicon/fb.png" class="img-responsive hover social-icon" alt="image"></a>
+      <a href="https://twitter.com/urbancatcherhk" target="_blank"><img src="../img/socialicon/twitter.png" class="img-responsive hover social-icon" alt="image"></a>
+      <a href="http://urbancatcher.tumblr.com/" target="_blank"><img src="../img/socialicon/tumblr.png" class="img-responsive hover social-icon" alt="image"></a>
+      <a href="https://www.pinterest.com/urbancatcherhk" target="_blank"><img src="../img/socialicon/pinterest.png" class="img-responsive hover social-icon" alt="image"></a>
+    </div>
+    <div class="col-sm-6" style="padding:50px" >
+      <p>Store</p>
+      <a href="https://society6.com/urbancatcher" target="_blank"><img src="../img/socialicon/Society6.jpg" class="img-responsive hover" width="100px" height=auto style="display:inline; padding:10px" alt="image"></a>
+      <a href="https://www.etsy.com/shop/urbancatcher" target="_blank"><img src="../img/socialicon/Etsy.jpg" class="img-responsive hover" width="100px" height=auto style="display:inline; padding:10px" alt="image"></a>
+    </div>
+    <div class="text-center">
+      <a class="up-arrow" href="#home"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
   </div>
-  <div class="col-sm-6" style="padding:0px 50px">
-    <h3 style="color:#ffffff">Store</h3>
-    <p>Urbancatcher's products are available at the following store. For sales of original artwork, please contact urbancatcher@gmail.com</p>
-    <a href=#><img src="../img/socialicon/s6.png" class="img-responsive margin hover" style="width:80px" alt="image"></a>
-  </div>
 </div>
-<br/>
-<div class="row text-center">
-  <a href="#home"><span class="glyphicon glyphicon-chevron-up"></span></a>
-</div>
-</footer>
 
 
 </body>
 </html>
+

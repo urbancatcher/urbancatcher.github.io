@@ -3,36 +3,112 @@ body {
 /*  font-family: 'Droid Sans', sans-serif;*/
 /*  font-family: 'Droid Sans Mono', monospace;*/
 /*  font-family: 'Cutive Mono', monospace;*/
-  line-height: 1.8;
-  color: #110631;
-  font-size: 15px;
+  color:#1C419F;
+  font-size:16px;
+  line-height:200%
+}
+
+/*backgroundx*/
+.bg-blue {
+  background-color: #57CCFF; 
+  padding: 150px 50px;
+}
+.bg-grey {
+  background-color: #f0f0f0;
+  padding: 150px 0px;
+}
+.bg-white {
+  background-color: #ffffff;
+  padding:150px 0px;
 }
 a, a:link, a:visited  {
   text-decoration: none;
-  color:#110631; 
+  color:#FF4D5C;
 }
 a:hover, a:active {
   text-decoration: none;
-  color:#FF4D5C;
-}
-
-/*index page*/
-
-.bg-blue {
-  background-color: #57CCFF; 
-  padding:3rem;
-}
-.bg-white {
-  padding: 3rem;
-  background-color: #ffffff; 
+  color:#57CCFF;
 }
 .bg-white a, .bg-white a:link, .bg-white a:visited  {
   text-decoration: none;
-  color:#57CCFF; 
+  color:#FF4D5C;
+/*  color:#57CCFF;*/
 }
 .bg-white a:hover, .bg-white a:active {
   text-decoration: none;
+  color:#57CCFF;
+/*  color:#FF4D5C;  */
+}
+}
+.bg-white a, .bg-white a:link, .bg-white a:visited  {
+  text-decoration: none;
   color:#FF4D5C;
+/*  color:#57CCFF;*/
+}
+.bg-blue a:hover, .bg-blue a:active {
+  text-decoration: none;
+  color:#1C419F;
+/*  color:#FF4D5C;  */
+}
+.bottom{
+  padding:50px;
+  padding-top:0;
+}
+/*.bg-pink {
+  background-color: #FF4D5C; 
+  padding: 150px 50px;
+  color:#110631; 
+}
+.bg-pink a, .bg-pink a:link, .bg-pink a:visited  {
+  text-decoration: none;
+  color:#1C419F;
+}
+.bg-pink a:hover, .bg-pink a:active {
+  text-decoration: none;
+  color:#57CCFF; 
+}*/
+.social-icon
+{
+  display:inline;
+  width:65px;
+  height:auto;
+}
+
+
+
+/*nav-bar*/
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+/*  background-color:#110631;*/
+}
+.navbar-nav  li a:hover {
+/*  color: #FF4D5C !important;*/
+  color: #57CCFF !important;
+/*  color: #1C419F !important;*/
+}
+
+
+
+
+/*grid*/
+.shop-grid {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.shop-grid-item{
+  padding:10px;
+}
+.shop-grid-img{
+  display: inline;
+  width:250px;
+  height:auto;
 }
 .hover{
   opacity:0.8;
@@ -40,17 +116,75 @@ a:hover, a:active {
 .hover:hover {
   opacity:1;
 }
-.thumbnail-section{
-  max-width: 1200px;
-  margin:0 auto;
+
+
+
+.grid {
+  max-width: 900px;
+  margin: 0 auto;
 }
-.thumbnail-frame{
-  padding:2rem;
+.grid-item{
+  padding:10px 0;
 }
-.thumbnailicon {
-/*  padding:1rem;*/
+.grid-img{
+  display: inline;
   width:300px;
+  height:auto;
 }
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 60%;
+  left: 10%;
+  top: 20%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+}
+.hovereffect img {
+  display: inline;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.hovereffect:hover img {
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.8);
+}
+.hovereffect p{
+  color: #FFF;
+  font-size: 14px;
+  letter-spacing: 5px;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.hovereffect:hover p{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+
 
 
 /*project page*/
@@ -60,19 +194,23 @@ a:hover, a:active {
   display:inline;
 }
 .gallery{
-  padding:3rem 0rem;
+  padding-top:5rem;
+  padding-bottom:10rem;
+  padding-left:2rem;
+  padding-right:2rem;
 }
+
 .gallerytitle{
-  color: #110631; 
+  font-size:30px;
+/*  color: #110631; */
 }
 .description{
   text-align:center;
   font-size:16px;
+  padding: 0rem 5rem;
 }
 .worktitle{
   color:#FF4D5C;
-
-
 }
 .artwork {
   padding:2rem 0rem;
@@ -86,6 +224,7 @@ a:hover, a:active {
 }
 
 .gallery-postcard{
+  max-width:900px;
   margin: 0 auto;
   padding:3rem 0rem;
 }
@@ -93,4 +232,7 @@ a:hover, a:active {
   padding:2rem 0rem;
   width:250px;
   display:inline;
+}
+#contact {
+  padding: 50px 0px;
 }
