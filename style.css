@@ -194,6 +194,8 @@ a:hover, a:active {
   display:inline;
 }
 .gallery{
+  max-width:900px;
+  margin:0 auto;
   padding-top:5rem;
   padding-bottom:10rem;
   padding-left:2rem;
@@ -210,15 +212,16 @@ a:hover, a:active {
   padding: 0rem 5rem;
 }
 .worktitle{
-  color:#FF4D5C;
+  font-size:14px;
+/*  color:#110631;*/
 }
 .artwork {
-  padding:2rem 0rem;
+  padding-top:2rem;
   width:800px;
   display:inline;
 }
 .artwork-portrait {
-  padding:2rem 0rem;
+  padding-top:2rem;
   width:400px;
   display:inline;
 }
