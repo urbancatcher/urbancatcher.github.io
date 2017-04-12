@@ -1,0 +1,72 @@
+body, h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Mono', sans-serif;}
+body {
+  font-size: 16px;
+  line-height: 2em;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-weight: 300;
+  font-style: normal;
+  color: #757b8a;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+h1, h2 {color: #3274ff;}
+h3, h4, h5, h6 {color: #404040; font-size: 16px;}
+a, a:link, a:visited {text-decoration: none; color: #94b6ff;}
+a:hover, a:active {text-decoration: none; color: #3274ff !important;}
+.container-fluid {margin: 0 auto; padding: 0;}
+.bg {margin: 0 auto; padding: 20% 5%; background-color: #ffffff;}
+.bg-l {max-width: 1200px}
+.bg-m {max-width: 900px}
+.bg-s {max-width: 750px}
+footer {margin-top: 10%; padding: 5%; background-color: #f0f0f0;}
+
+
+/* navbar */
+.navbar {
+  color: #94b6ff !important;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  opacity: 1;
+  background-color: #ffffff;
+}
+.navbar-brand {
+  color: #94b6ff !important;
+}
+.navbar-nav  li a{
+  text-decoration: none !important; 
+  color: #94b6ff !important;
+}
+.navbar-nav  li a:hover {
+  text-decoration: none; 
+  color: #3274ff !important;
+}
+
+
+/* landing image */
+.bgimg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg {
+  background-image: url("../img/cover.png");
+  min-height: 100vh;
+}
+
+
+/* grid */
+.grid {max-width: 900px; margin: 0 auto;}
+.grid-item {padding: 1%;}
+
+
+/* project page */
+.bg-project {max-width: 1500px; margin: 0 auto; padding: 10% 5%; background-color: #ffffff;}
+.bg-project img {margin: 0 auto; padding:3% 1%;}
+.project-text {max-width: 900px; margin: 0 auto;}

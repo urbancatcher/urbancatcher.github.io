@@ -1,160 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>URBANCATCHER | DOODLER</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!--css file-->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- js file -->  
-  <script src="script.js"></script>
-  <!--browser icon-->
-  <link rel="icon" href="img/icon.png">
+<title>urbancatcher's doodles</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- css file -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- js file -->  
+<script src="js/script.js"></script>
+<!-- font -->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<!-- browser icon -->
+<link rel="icon" href="img/icon.png">
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!-- Navbar -->
+<!-- navbar -->
+<header>
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#home">URBANCATCHER</a>
+      <ul class="navbar-brand"><a href="index.html">urbancatcher</a></ul>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">  
-        <li><a href="#work">WORK</a></li>
-        <li><a href="#store">STORE</a></li> 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#doodles">doodles</a></li>
+        <li><a href="#store">store</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
+</header>
+<main>
 
-<!-- Container (Header)-->
-<div class="container-fluid bg-blue text-center">
-  <div class="row">
-    <img src="img/profile.svg" class="img-responsive" style="display:inline" alt="img" width="300px" height=auto>
-    <h1 style="color:#ffffff;font-size:40px">Urbancatcher is a <span style="color:#FF4D5C">doodler</span>.</h1>
-    <p>Editorial Illustration / Book Illustration / Surface Design / Character Design</p>
-    <a href="mailto:urbancatcher@gmail.com"><img src="img/socialicon/email.png" class="img-responsive hover social-icon" alt="image"></a>
-    <a href="https://www.instagram.com/urbancatcher/" target="_blank"><img src="img/socialicon/ig.png" class="img-responsive hover social-icon" alt="image"></a>
-    <a href="https://www.facebook.com/urbancatcherhk" target="_blank"><img src="img/socialicon/fb.png" class="img-responsive hover social-icon" alt="image"></a>
-    <a href="https://twitter.com/urbancatcherhk" target="_blank"><img src="img/socialicon/twitter.png" class="img-responsive hover social-icon" alt="image"></a>
-    <a href="http://urbancatcher.tumblr.com/" target="_blank"><img src="img/socialicon/tumblr.png" class="img-responsive hover social-icon" alt="image"></a>
-    <a href="https://www.pinterest.com/urbancatcherhk" target="_blank"><img src="img/socialicon/pinterest.png" class="img-responsive hover social-icon" alt="image"></a>
-<!--       <a href=#><img src="img/socialicon/s6.png" class="img-responsive hover" style="display:inline" alt="image"  width="65px" height=auto></a>  -->
-  </div>
+<!-- Landing Image -->
+<div class="container-fluid bgimg">
 </div>
 
-
-<!-- Container (Work)-->
-<div id="work" class="container-fluid bg-white text-center">
-  <h3>WORK</h3>
-  <br/>
+<!-- Doodles -->
+<div class="container-fluid bg bg-l text-center" id="doodles">
+  <h2>doodles</h2><br/><br/>
   <div class="grid">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/daydaydoodle.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/daydaydoodle.html"> <div class="overlay"><p>Day Day Doodle</p></div></a>  
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/prettywoman.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/prettywoman.html"> <div class="overlay"><p>Pretty Woman</p></div></a>  
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/randomppl.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/randomppl.html"> <div class="overlay"><p>Random People Make You Smile</p></div></a>  
-        </div>
-      </div>
-    </div>   
-
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/portraits.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/portraits.html"> <div class="overlay"><p>Portraits</p></div></a>  
-        </div>
-      </div>  
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/jungle.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/jungle.html"> <div class="overlay"><p>Jungle Love</p></div></a>  
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/cozyhome.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/cozyhome.html"> <div class="overlay"><p>Cozy Home</p></div></a>  
-        </div>
-      </div>
+    <div class="col-sm-6">
+      <div class="grid-item"><a href="projects/hkfood.html"><img src="img/grid/grid-01.png" class="img-responsive" alt="image" width="400px"></a></div>
     </div>
-
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/kitchen.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/kitchen.html"> <div class="overlay"><p>Kitchen</p></div></a>  
-        </div>
-      </div>  
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/justcollection.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/justcollection.html"> <div class="overlay"><p>Just Collection</p></div></a>  
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="grid-item hovereffect">
-          <img src="img/grid/postcard.jpg" class="img-responsive" style="width:300px" alt="image">
-          <a href="project/postcard.html"> <div class="overlay"><p>Postcard</p></div></a>  
-        </div>
-      </div>
+    <div class="col-sm-6">
+      <div class="grid-item"><a href="projects/ddd.html"><img src="img/grid/grid-02.jpg" class="img-responsive" alt="image" width="400px"></a></div>
     </div>
-
-    </div>   
   </div>
 </div>
 
-
-
-
-<!-- Container (Store)-->
-<div id="store" class="container-fluid bg-grey text-center">
-  <div style="max-width:900px; margin:0 auto; padding:0px 30px">
-    <h3>STORE</h3>
-    <br/>
-    <p class="text-justify">Art prints and other products are available at Society6. Some of the original artwork are available at Etsy. If you are interested in other artwork which is not listed, please contact <a href="mailto:urbancatcher@gmail.com">urbancatcher@gmail.com</a>.  Thanks for loving my work!</p>
-  </div>
-  <br/>
-  <div class="shop-grid">
-    <div class="row">
-      <div class="col-sm-6 shop-grid-item">
-        <a href="https://society6.com/urbancatcher" target="_blank"><img src="img/socialicon/Society6.jpg" class="img-responsive hover shop-grid-img" alt="image"></a>
-      </div>
-<!--       <div class="col-sm-4 grid-item">
-        <a href=#><img src="img/socialicon/Redbubble.jpg" class="img-responsive hover shop-img" alt="image"></a>
-      </div> -->
-      <div class="col-sm-6 shop-grid-item">
-        <a href="https://www.etsy.com/shop/urbancatcher" target="_blank"><img src="img/socialicon/Etsy.jpg" class="img-responsive hover shop-grid-img" alt="image"></a>
-      </div>
-    </div>
-  </div>
-  <br/>
-  <br/>
-<!--   <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP"><span class="glyphicon glyphicon-chevron-up"></span></a> -->
-  <a class="up-arrow" href="#home"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<!-- Store -->
+<div class="container-fluid bg bg-s text-center" id="store" >
+  <h2>happy shopping</h2><br/>
+  <p>Art prints and products are available at <a href="https://society6.com/urbancatcher" target="_blank">Society6</a>. Some of my original artwork are available at <a href="https://www.etsy.com/shop/urbancatcher" target="_blank">Etsy</a>. Thanks for loving my work!</p>
 </div>
+
+<!-- Contact -->
+<div class="container-fluid bg bg-s text-center" id="contact">
+  <h2>how to reach me</h2><br/>
+  <p>Hi, I'm a doodler from Hong Kong who travels around. You can email me at <a href="mailto:urbancatcher@gmail.com">urbancatcher@gmail.com</a> for collaboration or find me killing time on <a href="https://www.instagram.com/urbancatcher" target="_blank">instagram</a>.</p>
+</div>
+</main>
+
+<!--Footer-->
+<footer class="text-center">
+  <p><a href="https://www.instagram.com/urbancatcher" target="_blank">instagram</a> / <a href="https://society6.com/urbancatcher" target="_blank">society6</a></p>
+  <p>copyright 2017 by urbancatcher</p>
+  <a href="#home"><span class="glyphicon glyphicon-menu-up"></span></a>
+</footer>
 
 </body>
 </html>
