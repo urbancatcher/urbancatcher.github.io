@@ -138,20 +138,69 @@
   <h2 class="w3-center">how to reach me</h2>
   <div class="w3-row w3-padding-32 w3-section">
     <p>Drop me an email for commission enquiries or find me killing time on <a href="https://www.instagram.com/urbancatcher" target="_blank">instagram</a>.</p><br><a href="mailto:urbancatcher@gmail.com"><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i></a> Email: urbancatcher@gmail.com<br><br>
-  <form action="/action_page.php" target="_blank">
-    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-      <div class="w3-half">
-        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      </div>
-      <div class="w3-half">
-        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-      </div>
-    </div>
-    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-    <button class="w3-button w3-black w3-right w3-section" type="submit">
-      <i class="fa fa-paper-plane"></i> SEND MESSAGE
-    </button>
-  </form>
+  <!--<form action="/action_page.php" target="_blank">-->
+    <!--<div class="w3-row-padding" style="margin:0 -16px 8px -16px">-->
+      <!--<div class="w3-half">-->
+        <!--<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">-->
+      <!--</div>-->
+      <!--<div class="w3-half">-->
+        <!--<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">-->
+    <!--<button class="w3-button w3-black w3-right w3-section" type="submit">-->
+      <!--<i class="fa fa-paper-plane"></i> SEND MESSAGE-->
+    <!--</button>-->
+  <!--</form>-->
+    <form name="contactform" method="post" action="php/send_form_email.php">
+      <table width="450px">
+        <tr>
+          <td valign="top">
+            <label for="first_name">First Name *</label>
+          </td>
+          <td valign="top">
+            <input  type="text" name="first_name" maxlength="50" size="30">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"">
+          <label for="last_name">Last Name *</label>
+          </td>
+          <td valign="top">
+            <input  type="text" name="last_name" maxlength="50" size="30">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="email">Email Address *</label>
+          </td>
+          <td valign="top">
+            <input  type="text" name="email" maxlength="80" size="30">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="telephone">Telephone Number</label>
+          </td>
+          <td valign="top">
+            <input  type="text" name="telephone" maxlength="30" size="30">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="comments">Comments *</label>
+          </td>
+          <td valign="top">
+            <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+          </td>
+        </tr>
+      </table>
+    </form>
   </div>
 </div>
 
