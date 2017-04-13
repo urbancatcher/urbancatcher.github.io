@@ -2,84 +2,213 @@
 <html lang="en">
 <head>
 <title>urbancatcher's doodles</title>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- w3 links -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Bootstrap link -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 <!-- css file -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- js file -->  
-<script src="js/script.js"></script>
-<!-- font -->
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 <!-- browser icon -->
 <link rel="icon" href="img/icon.png">
 </head>
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
-<!-- navbar -->
-<header>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <ul class="navbar-brand"><a href="index.html">urbancatcher</a></ul>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#doodles">doodles</a></li>
-        <li><a href="#store">store</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-    </div>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-blue w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item">URBANCATCHER</a>
+    <a href="#doodles" class="w3-bar-item w3-hide-small">DOODLES</a>
+    <a href="#shop" class="w3-bar-item w3-hide-small">SHOP</a>
+    <a href="#contact" class="w3-bar-item w3-hide-small">CONTACT</a>
   </div>
-</nav>
-</header>
-<main>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#doodles" class="w3-bar-item w3-button" onclick="toggleFunction()">doodles</a>
+    <a href="#shop" class="w3-bar-item w3-button" onclick="toggleFunction()">shop</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">contact</a>
+  </div>
+</div>
+
 
 <!-- Landing Image -->
-<div class="container-fluid bgimg">
-</div>
+<div class="bgimg-1 w3-display-container" id="home"></div>
 
-<!-- Doodles -->
-<div class="container-fluid bg bg-l text-center" id="doodles">
-  <h2>doodles</h2><br/><br/>
-  <div class="grid">
-    <div class="col-sm-6">
-      <div class="grid-item"><a href="projects/hkfood.html"><img src="img/grid/grid-01.png" class="img-responsive" alt="image" width="400px"></a></div>
-    </div>
-    <div class="col-sm-6">
-      <div class="grid-item"><a href="projects/ddd.html"><img src="img/grid/grid-02.jpg" class="img-responsive" alt="image" width="400px"></a></div>
-    </div>
+
+<!-- About -->
+<div class="w3-content w3-container w3-padding-64 w3-center">
+  <h2 class="w3-center">urbancatcher is a doodler</h2>
+  <div class="w3-row w3-padding-32 w3-section">
+    <p>Hi, I'm a doodler from Hong Kong who travels around.</p>
   </div>
 </div>
 
-<!-- Store -->
-<div class="container-fluid bg bg-s text-center" id="store" >
-  <h2>happy shopping</h2><br/>
-  <p>Art prints and products are available at <a href="https://society6.com/urbancatcher" target="_blank">Society6</a>. Some of my original artwork are available at <a href="https://www.etsy.com/shop/urbancatcher" target="_blank">Etsy</a>. Thanks for loving my work!</p>
+
+<!-- Doodles -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="doodles">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">DOODLES</span>
+  </div>
 </div>
+
+<div class="w3-content w3-container w3-padding-64 w3-center">
+  <h2 class="w3-center"></h2>
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m4">
+        <img src="img/hkfood-01.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m4">
+        <img src="img/hkfood-02.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m4">
+        <img src="img/hkfood-03.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+    </div><br/>
+
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m4">
+        <img src="img/hkfood-04.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m4">
+        <img src="img/hkfood-05.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m4">
+        <img src="img/hkfood-06.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+    </div><br/>
+
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m6">
+        <img src="img/ddd-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m6">
+        <img src="img/ddd-02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+    </div><br/>
+  </div>
+</div>
+
+<!-- full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Shop -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="shop">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SHOP</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64 w3-center">
+  <h2 class="w3-center">happy shopping</h2>
+  <div class="w3-row w3-padding-32 w3-section">
+    <p>Art prints and products are available at <a href="https://society6.com/urbancatcher" target="_blank">Society6</a>. Some of my original artwork are available at <a href="https://www.etsy.com/shop/urbancatcher" target="_blank">Etsy</a>. Thanks for loving my work!</p>
+  </div>
+</div>
+
 
 <!-- Contact -->
-<div class="container-fluid bg bg-s text-center" id="contact">
-  <h2>how to reach me</h2><br/>
-  <p>Hi, I'm a doodler from Hong Kong who travels around. You can email me at <a href="mailto:urbancatcher@gmail.com">urbancatcher@gmail.com</a> for collaboration or find me killing time on <a href="https://www.instagram.com/urbancatcher" target="_blank">instagram</a>.</p>
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="contact">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
 </div>
-</main>
+
+<div class="w3-content w3-container w3-padding-64 w3-center">
+  <h2 class="w3-center">how to reach me</h2>
+  <div class="w3-row w3-padding-32 w3-section">
+    <p>Drop me an email for commission enquiries or find me killing time on <a href="https://www.instagram.com/urbancatcher" target="_blank">instagram</a>.</p><br><a href="mailto:urbancatcher@gmail.com"><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i></a> Email: urbancatcher@gmail.com<br><br>
+
+<!--     <form action="/action_page.php" target="_blank">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+      <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form> -->
+  </div>
+</div>
+
+
 
 <!--Footer-->
-<footer class="text-center">
-  <p><a href="https://www.instagram.com/urbancatcher" target="_blank">instagram</a> / <a href="https://society6.com/urbancatcher" target="_blank">society6</a></p>
-  <p>copyright 2017 by urbancatcher</p>
-  <a href="#home"><span class="glyphicon glyphicon-menu-up"></span></a>
+<div class="w3-right-align up">
+  <a href="#home"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<footer class="w3-center">
+  <a href="https://www.instagram.com/urbancatcher" target="_blank"><i class="fa fa-instagram"></i></a>&#160;
+  <a href="https://www.facebook.com/urbancatcherhk" target="_blank"><i class="fa fa-facebook"></i></a>
+  <p>Copyright 2017 by URBANCATCHER</p>
 </footer>
+
+
+
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
 
 </body>
 </html>
-
