@@ -8,12 +8,15 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap link -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 <!-- css file -->
-<link rel="stylesheet" type="text/css" href="css/style-w3.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- browser icon -->
 <link rel="icon" href="img/icon.png">
@@ -26,98 +29,80 @@
     <a class="w3-bar-item w3-button w3-hover-blue w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">urbancatcher</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small">about</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">doodles</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small">store</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small">contact</a>
+    <a href="#home" class="w3-bar-item">URBANCATCHER</a>
+    <a href="#doodles" class="w3-bar-item w3-hide-small">DOODLES</a>
+    <a href="#shop" class="w3-bar-item w3-hide-small">SHOP</a>
+    <a href="#contact" class="w3-bar-item w3-hide-small">CONTACT</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <a href="#doodles" class="w3-bar-item w3-button" onclick="toggleFunction()">doodles</a>
+    <a href="#shop" class="w3-bar-item w3-button" onclick="toggleFunction()">shop</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">contact</a>
   </div>
 </div>
+
 
 <!-- Landing Image -->
 <div class="bgimg-1 w3-display-container" id="home"></div>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>urbancatcher is a doodler</em></p>
-<!--   <h1 style="color:#3274ff">Suki Lau is an illustrator and dataviz designer.</h1><br/>  
-  <p></p>   -->
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-<!--       <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br> -->
-      <img src="img/cover.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>I am a Hong Kong illustrator/designer based in Salt Lake City, specializing in illustrations, infographics and data visualisation. I like telling stories with data and graphics. I started working with data and graphics 6 years ago as a statistician and amateur illustrator. I believe that bridging analytic and aesthetic would enhance communication and eventually enable people to better their lives.</p>
-    </div>
+<!-- About -->
+<div class="w3-content w3-container w3-padding-64 w3-center">
+  <h2 class="w3-center">urbancatcher is a doodler</h2>
+  <div class="w3-row w3-padding-32 w3-section">
+    <p>Hi, I'm a doodler from Hong Kong who travels around.</p>
   </div>
 </div>
 
 
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<!-- Doodles -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="doodles">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">DOODLES</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+<div class="w3-content w3-container w3-padding-64 w3-center">
+  <h2 class="w3-center"></h2>
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m4">
+        <img src="img/hkfood-01.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m4">
+        <img src="img/hkfood-02.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m4">
+        <img src="img/hkfood-03.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+    </div><br/>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="img/test1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m4">
+        <img src="img/hkfood-04.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m4">
+        <img src="img/hkfood-05.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m4">
+        <img src="img/hkfood-06.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+    </div><br/>
 
-    <div class="w3-col m3">
-      <img src="img/test2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/test1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/test3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="img/test1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/test2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/test3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/test3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-<!--     <button class="w3-button w3-padding-large" style="margin-top:64px">LOAD MORE</button> -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m6">
+        <img src="img/ddd-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+      <div class="w3-col m6">
+        <img src="img/ddd-02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+      </div>
+    </div><br/>
   </div>
 </div>
 
-<!-- Modal for full size images on click-->
+<!-- full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -126,74 +111,70 @@
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+
+<!-- Shop -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="shop">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SHOP</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64 w3-center">
+  <h2 class="w3-center">happy shopping</h2>
+  <div class="w3-row w3-padding-32 w3-section">
+    <p>Art prints and products are available at <a href="https://society6.com/urbancatcher" target="_blank">Society6</a>. Some of my original artwork are available at <a href="https://www.etsy.com/shop/urbancatcher" target="_blank">Etsy</a>. Thanks for loving my work!</p>
+  </div>
+</div>
+
+
+<!-- Contact -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="contact">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">HOW TO REACH ME</h3>
-  <p class="w3-center"><em></em></p>
+<div class="w3-content w3-container w3-padding-64 w3-center">
+  <h2 class="w3-center">how to reach me</h2>
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <p>Hi, I'm a doodler from Hong Kong who travels around. You can email me at urbancatcher@gmail.com for collaboration or find me killing time on instagram.</p>
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Salt Lake City & Hong Kong<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: sukilauhk@gmail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
+    <p>Drop me an email for commission enquiries or find me killing time on <a href="https://www.instagram.com/urbancatcher" target="_blank">instagram</a>.</p><br><a href="mailto:urbancatcher@gmail.com"><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i></a> Email: urbancatcher@gmail.com<br><br>
+
+<!--     <form action="/action_page.php" target="_blank">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+      <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form> -->
   </div>
 </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-blue w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-  </div>
+
+
+<!--Footer-->
+<div class="w3-right-align up">
+  <a href="#home"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<footer class="w3-center">
+  <a href="https://www.instagram.com/urbancatcher" target="_blank"><i class="fa fa-instagram"></i></a>&#160;
+  <a href="https://www.facebook.com/urbancatcherhk" target="_blank"><i class="fa fa-facebook"></i></a>
+  <p>Copyright 2017 by URBANCATCHER</p>
 </footer>
- 
-<!-- Add Google Maps -->
+
+
+
+
+
+
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
