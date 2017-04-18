@@ -8,16 +8,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Bootstrap link -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 <!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 <!-- css file -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- js file -->  
+<script src="js/script.js"></script>
 <!-- browser icon -->
 <link rel="icon" href="img/icon.png">
 </head>
@@ -66,79 +62,28 @@
 <div class="w3-content w3-container w3-padding-64 w3-center">
   <div class="w3-row">
     <div class="w3-third">
-      <img src="img/hkfood-01.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
-      <img src="img/hkfood-02.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
-      <img src="img/hkfood-03.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
+      <a href="project/hkfood.html"><img src="img/hkfood/hkfood-01.png" style="width:100%" class="w3-hover-opacity w3-padding" alt="image"></a>
     </div>
 
     <div class="w3-third">
-      <img src="img/hkfood-04.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
-      <img src="img/hkfood-05.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
-      <img src="img/hkfood-06.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
+      <a href="project/ddd.html"><img src="img/ddd/ddd-01.jpg" style="width:100%" class="w3-hover-opacity w3-padding" alt="image"></a>
     </div>
 
     <div class="w3-third">
-      <img src="img/ddd-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
-      <img src="img/ddd-02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
-
     </div>
   </div>
 </div>
 
-
-<!-- <div class="bgimg-2 w3-display-container w3-opacity-min" id="doodles">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">DOODLES</span>
-  </div>
-</div>
-
-<div class="w3-content w3-container w3-padding-64 w3-center">
-  <h2 class="w3-center"></h2>
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-row-padding w3-center">
-      <div class="w3-col m4">
-        <img src="img/hkfood-01.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-padding" alt="image">
-      </div>
-      <div class="w3-col m4">
-        <img src="img/hkfood-02.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
-      </div>
-      <div class="w3-col m4">
-        <img src="img/hkfood-03.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
-      </div>
-    </div><br/>
-
-    <div class="w3-row-padding w3-center">
-      <div class="w3-col m4">
-        <img src="img/hkfood-04.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
-      </div>
-      <div class="w3-col m4">
-        <img src="img/hkfood-05.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
-      </div>
-      <div class="w3-col m4">
-        <img src="img/hkfood-06.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
-      </div>
-    </div><br/>
-
-    <div class="w3-row-padding w3-center">
-      <div class="w3-col m6">
-        <img src="img/ddd-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
-      </div>
-      <div class="w3-col m6">
-        <img src="img/ddd-02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
-      </div>
-    </div><br/>
-  </div>
-</div> -->
 
 <!-- full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
-
+ -->
 
 <!-- Shop -->
 <div class="bgimg-2 w3-display-container w3-opacity-min" id="shop">
@@ -166,71 +111,6 @@
   <h2 class="w3-center">how to reach me</h2>
   <div class="w3-row w3-padding-32 w3-section">
     <p>Drop me an email for commission enquiries or find me killing time on <a href="https://www.instagram.com/urbancatcher" target="_blank">instagram</a>.</p><br><a href="mailto:urbancatcher@gmail.com"><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i></a> Email: urbancatcher@gmail.com<br><br>
-  <!--<form action="/action_page.php" target="_blank">-->
-    <!--<div class="w3-row-padding" style="margin:0 -16px 8px -16px">-->
-      <!--<div class="w3-half">-->
-        <!--<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">-->
-      <!--</div>-->
-      <!--<div class="w3-half">-->
-        <!--<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">-->
-    <!--<button class="w3-button w3-black w3-right w3-section" type="submit">-->
-      <!--<i class="fa fa-paper-plane"></i> SEND MESSAGE-->
-    <!--</button>-->
-  <!--</form>-->
-
-    <!-- this form and the PHP code is copied from http://www.freecontactform.com/email_form.php -->
-<!--     <form name="contactform" method="post" action="send_form_email.php">
-      <table width="450px">
-        <tr>
-          <td valign="top">
-            <label for="first_name">First Name *</label>
-          </td>
-          <td valign="top">
-            <input  type="text" name="first_name" maxlength="50" size="30">
-          </td>
-        </tr>
-        <tr>
-          <td valign="top"">
-          <label for="last_name">Last Name *</label>
-          </td>
-          <td valign="top">
-            <input  type="text" name="last_name" maxlength="50" size="30">
-          </td>
-        </tr>
-        <tr>
-          <td valign="top">
-            <label for="email">Email Address *</label>
-          </td>
-          <td valign="top">
-            <input  type="text" name="email" maxlength="80" size="30">
-          </td>
-        </tr>
-        <tr>
-          <td valign="top">
-            <label for="telephone">Telephone Number</label>
-          </td>
-          <td valign="top">
-            <input  type="text" name="telephone" maxlength="30" size="30">
-          </td>
-        </tr>
-        <tr>
-          <td valign="top">
-            <label for="comments">Comments *</label>
-          </td>
-          <td valign="top">
-            <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" style="text-align:center">
-            <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
-          </td>
-        </tr>
-      </table>
-    </form> -->
   </div>
 </div>
 
@@ -247,46 +127,6 @@
   <p>Copyright 2017 by URBANCATCHER</p>
 </footer>
 
-
-
-
-
-
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 </body>
 </html>

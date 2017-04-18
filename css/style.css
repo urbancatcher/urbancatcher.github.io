@@ -104,6 +104,5 @@ footer p {font-size: 12px;}
 
 
 /* project page */
-.bg-project {max-width: 1500px; margin: 0 auto; padding: 10% 5%; background-color: #ffffff;}
-.bg-project img {margin: 0 auto; padding:3% 1%;}
+.bg-project {max-width: 900px; margin: 0 auto; padding:5%; padding-top: 10%; background-color: #ffffff;}
 .project-text {max-width: 900px; margin: 0 auto;}
